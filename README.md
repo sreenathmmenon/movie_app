@@ -49,4 +49,7 @@ pip install -r requirements.txt
 ```
 python entertainment_center.py
 ```
+## Screenshots
 
+
+![Movie Website](https://github.com/sreenathmmenon/ud036_StarterCode/blob/master/screenshots/movie_trailer_website.png)
