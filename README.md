@@ -50,7 +50,7 @@ pip install -r requirements.txt
 python entertainment_center.py
 ```
 
-**Note: Type Ctrl + C to stop the file execution at the end**
+**Note: Type Ctrl + C at the end to stop the file execution.**
 
 ## Screenshots
 
