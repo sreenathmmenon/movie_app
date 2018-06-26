@@ -65,9 +65,14 @@ main_page_head = '''
             background-color: white;
         }
 
-        table tr td {
-            max-width: 80px !important;
+        .navbar-inverse .navbar-brand {
+￼            color: #fff !important;
         }
+
+        .navbar.navbar-inverse.navbar-fixed-top {
+        ￼    background: #3b5998 !important;
+        }
+
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
@@ -206,4 +211,3 @@ def open_movies_page(movies):
     # open the output file in the browser (in a new tab, if possible)
     url = os.path.abspath(output_file.name)
     webbrowser.open('file://' + url, new=2)
-
