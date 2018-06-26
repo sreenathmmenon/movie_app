@@ -64,13 +64,13 @@ main_page_head = '''
             top: 0;
             background-color: white;
         }
-
+        
         .navbar-inverse .navbar-brand {
-￼            color: #fff !important;
+            color: #fff !important;
         }
-
+        
         .navbar.navbar-inverse.navbar-fixed-top {
-        ￼    background: #3b5998 !important;
+            background: #3b5998 !important;
         }
 
     </style>
