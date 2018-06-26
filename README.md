@@ -2,8 +2,8 @@
 
 ## Installation Steps
 
-**First, install virtual environment so that our changes/packages don't get installed globally
-If virtual environment is already presernt, then directly move to step 2**
+**First, install virtual environment so that our changes/packages don't get installed globally.
+If virtual environment is already present, then directly move to step 2**
 
 ```
 pip install virtualenv
@@ -40,7 +40,7 @@ Unzip the file once the download is complete
 cd ud036_StarterCode/
 ```
 
-**Install dependent packages mentioned within requirements.txt file**
+**Install dependent packages mentioned within requirements.txt file by executing the following command**
 ```
 pip install -r requirements.txt
 ```
