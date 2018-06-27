@@ -40,4 +40,3 @@ movies = [toystory3, dragon, zootopia, incredibles, shrek, avatar,
 
 # Pass the movie objects and open the movie website
 fresh_tomatoes.open_movies_page(movies)
-
