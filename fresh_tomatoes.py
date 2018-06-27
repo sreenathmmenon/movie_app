@@ -146,6 +146,7 @@ movie_tile_content = '''
 </div>
 '''
 
+
 def create_movie_tiles_content(movies):
     """
     Create Contents for displaying in the webpage
@@ -160,9 +161,9 @@ def create_movie_tiles_content(movies):
     # The HTML content for this section of the page
     content = ''
 
-    #Sort the movie list based on IMDB rating in ascending order
-    #Movie with higher rating wil be displayed first
-    movies.sort(key = lambda x: x.imdb_rating, reverse=True)
+    # Sort the movie list based on IMDB rating in ascending order
+    # Movie with higher rating wil be displayed first
+    movies.sort(key=lambda x: x.imdb_rating, reverse=True)
 
     # Looping through each item in movie list
     for movie in movies:
@@ -179,17 +180,18 @@ def create_movie_tiles_content(movies):
             movie_title=movie.title,
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id,
-            genre = movie.genre,
-            released = movie.released,
-            production = movie.production,
-            rating = movie.imdb_rating
+            genre=movie.genre,
+            released=movie.released,
+            production=movie.production,
+            rating=movie.imdb_rating
         )
     return content
 
+
 def open_movies_page(movies):
     """
-    Fetch the movie list, obtain the generated contents, write it to a html file 
-    and display the contents in web browser
+    Fetch the movie list, obtain the generated contents,
+    write it to a html file and display the contents in web browser
 
     Args:
         movies: a list of movies whose details are to be displayed
@@ -208,6 +210,6 @@ def open_movies_page(movies):
     output_file.write(main_page_head + rendered_content)
     output_file.close()
 
-    # open the output file in the browser (in a new tab, if possible)
+    # Open the output file in the browser (in a new tab, if possible)
     url = os.path.abspath(output_file.name)
     webbrowser.open('file://' + url, new=2)

@@ -1,5 +1,6 @@
 import requests as req
 
+
 class MovieApi():
     """
     Wrapper to connect to OMDB API and fetch the movie details
@@ -8,7 +9,7 @@ class MovieApi():
         movie_name: name of the movie whose details are to be obtained
     """
 
-    # Defining constants corresponding to API key (account specific) and OMDB API url
+    # Defining constants for API key (account specific) and OMDB API url
     API_KEY = 'b6d9a50d'
     OMDB_API_URL = 'http://www.omdbapi.com/?t='
 
@@ -18,10 +19,11 @@ class MovieApi():
         self.movie_name = movie_name
         movie_name.replace(" ", "+")
 
-        #Pass the movie name to OMDB API and fetch the json response
-        response = req.get(self.OMDB_API_URL + movie_name + '&apikey='+ self.API_KEY)
+        # Pass the movie name to OMDB API and fetch the json response
+        response = req.get(self.OMDB_API_URL + movie_name +
+                           '&apikey=' + self.API_KEY)
         self.data = response.json()
-    
+
     def get_title(self):
         """
         Fetch Title from Output
@@ -45,7 +47,7 @@ class MovieApi():
             Returns director name if available. Else, return None
         """
         return self.data.get('Director')
-    
+
     def get_production(self):
         """
         Fetch the Production Name from the Output
@@ -69,7 +71,7 @@ class MovieApi():
             Returns movie's poster url if available. Else, return None
         """
         return self.data.get('Poster')
-    
+
     def get_genre(self):
         """
         Fetch the movie genre data
@@ -81,7 +83,7 @@ class MovieApi():
             Returns movie genre data if available. Else, return None
         """
         return self.data.get('Genre')
-    
+
     def get_release_date(self):
         """
         Fetch the Movie Release Data
@@ -93,7 +95,7 @@ class MovieApi():
             Returns movie release data if available. Else, return None
         """
         return self.data.get('Released')
-    
+
     def get_rating(self):
         """
         Fetch the Movie's IMDB Rating
@@ -105,4 +107,3 @@ class MovieApi():
             Returns movie's IMDB rating if available. Else, return None
         """
         return self.data.get('imdbRating')
-

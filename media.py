@@ -1,6 +1,7 @@
 import fresh_tomatoes
 import movie_api
 
+
 class Movie():
     """
     Movie Class gets the movie name, pass the details to OMDB API and
@@ -13,10 +14,10 @@ class Movie():
     def __init__(self, name, trailer):
         """Constructor method"""
 
-        #Pass the movie name to OMDB API
+        # Pass the movie name to OMDB API
         movie = movie_api.MovieApi(name)
 
-        #Fetch the details related to the movie
+        # Fetch the details related to the movie
         self.title = movie.get_title()
         self.director = movie.get_director()
         self.production = movie.get_production()
