@@ -37,7 +37,7 @@ Unzip the file once the download is complete
 **Enter into the project directory**
 
 ```
-cd ud036_StarterCode/
+cd movie_app
 ```
 
 **Install dependent packages mentioned within requirements.txt file by executing the following command**
@@ -55,4 +55,4 @@ python entertainment_center.py
 ## Screenshots
 
 
-![Movie Website](https://github.com/sreenathmmenon/ud036_StarterCode/blob/master/screenshots/movie_trailer_website.png)
+![Movie Website](https://github.com/sreenathmmenon/movie_app/blob/master/screenshots/movie_trailer_website.png)
