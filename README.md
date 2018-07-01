@@ -1,4 +1,4 @@
-# ud036_StarterCode
+# Movie App integrated with OMDB API
 
 ## Installation Steps
 
