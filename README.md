@@ -26,7 +26,7 @@ cd movie/
 
 **Now, clone our project into this location using the following command:**
 ```
-git clone https://github.com/sreenathmmenon/ud036_StarterCode
+git clone https://github.com/sreenathmmenon/movie_app
 ```
 
 **If a user would like to directly download the project files, then click on green color button named 'Clone or download'. 
